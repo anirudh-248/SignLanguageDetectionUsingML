@@ -1,9 +1,9 @@
 from function import *
 from sklearn.model_selection import train_test_split
-from keras.utils import to_categorical
-from keras.models import Sequential
-from keras.layers import LSTM, Dense
-from keras.callbacks import TensorBoard
+from keras.utils import to_categorical # type: ignore
+from keras.models import Sequential # type: ignore
+from keras.layers import LSTM, Dense # type: ignore
+from keras.callbacks import TensorBoard # type: ignore
 label_map = {label:num for num, label in enumerate(actions)}
 # print(label_map)
 sequences, labels = [], []
